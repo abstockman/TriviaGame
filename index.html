@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
@@ -12,18 +11,45 @@
 </head>
 <body>
   <div class="container">
-    <div class="row">
-      <div class="text-center col-sm-12">
-        <img class="logo" src="assets/images/brightidealogo.svg" alt="Bright Idea Logo">
+    <div class="text-center col-xs-12">
+      <img class="logo" src="assets/images/brightidealogo.svg" alt="Bright Idea Logo">
+    </div>
+    <!-- <div class="text-center category-links col-xs-12">
+      <a class="hvr-wobble-vertical cat" href="">MOVIES</a>
+      <a class="hvr-wobble-vertical cat" href="">MUSIC</a>
+      <a class="hvr-wobble-vertical" href="">TELEVISION</a>
+    </div> -->
+    <div class="text-center start-button">
+      <button id="start-game">START GAME</button>
+    </div>
+    <div class="clearfix"></div>
+    <div class="questions-and-answers">
+      <div class="time-remaining text-center col-sm-12">
+        <p id="timer">TIME REMAINING: </p>
+      </div>
+      <div class="qa-box col-sm-12">
+        <p class="qa-question">This is a question to test how everything looks?</p>
+        <p id="a" class="qa-choices"></p>
+        <p id="b" class="qa-choices"></p>
+        <p id="c" class="qa-choices"></p>
+        <p id="d" class="qa-choices"></p>
       </div>
     </div>
-
+    <div class="text-center game-results">
+      <div class="col-sm-12">
+        <p class="correct"></p>
+        <p class="incorrect"></p>
+        <p class="unanswered"></p>
+      </div>
+    </div>
   </div>
+
+
 <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="assets/javascript/game.js"></script>
+<script src="assets/javascript/app.js"></script>
 </body>
 </html>
